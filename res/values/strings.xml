@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, test1!</string>
+    <string name="app_name">test1</string>
+    <string name="nextscreen">next screen</string>
+    <string name="New">New</string>
+    <string name="Open">Open</string>
+    <string name="blank"></string>
+    <string name="Date">Date</string>
+    <string name="Month">Month</string>
+    <string name="Year">Year</string>
+    <string name="Go">Go</string>
+    <string name="Lunch">Lunch</string>
+    <string name="Dinner">Dinner</string>
+    <string name="Others">Others</string>
+    <string name="Total">Total</string>
+    <string name="Food">Food</string>
+    <string name="Transport">Transport</string>
+    <string name="Laundry">Laundry</string>
+    <string name="Report">Report</string>
+    <string name="Report1">Report1</string>
+    <string name="Welcome">Welcome</string>
+</resources>
