@@ -22,6 +22,15 @@ public class test1 extends Activity {
             };   
        });
         
+        
+        Button mainNext1 = (Button) findViewById(R.id.nextScreen3);//button click event
+        mainNext1.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent j = new Intent();
+                j.setClassName("test1.example", "test1.example.report");//loading screen
+                startActivity(j);//starting activity
+            };   
+       });
        
         
     }

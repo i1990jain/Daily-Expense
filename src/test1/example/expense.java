@@ -27,8 +27,7 @@ public class expense extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.expense);//expense.xml as screen
-	    // TODO Auto-generated method stub
-	    
+	    final DbAdapter db = new DbAdapter(this);
 	    
 	    Bundle bundle = this.getIntent().getExtras();
 	    final String title1 = bundle.getString("title1");//receiving date
@@ -37,7 +36,7 @@ public class expense extends Activity {
 	    
 	    ((TextView)findViewById(R.id.expenseTitle)).setText(title1+"/"+title2+"/"+title3);
 	    final String date1 = title1+title2+title3;
-	    
+	    final String date2 = title1+"/"+title2+"/"+title3;
 	    
 	    Button mainNext = (Button) findViewById(R.id.totalbutton1);//button click event
         mainNext.setOnClickListener(new OnClickListener() {
@@ -77,8 +76,14 @@ public class expense extends Activity {
             	        Log.e("Could not write file " + e.getMessage(), tota);
             	    }  
             	    
+            	    db.open();
+            	    long id;
+            	    id= db.createExpense(date2, food, transport, laundry, total1);
+            	   db.close();
             	   
-            	   
+            	    
+            	    
+            	     
             	 
                }
            });
