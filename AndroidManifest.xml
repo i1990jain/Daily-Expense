@@ -17,6 +17,7 @@
         <activity android:name="expense"></activity>
         <activity android:name="output1"></activity>
         <activity android:name="report"></activity>
+        <activity android:name="new2"></activity>
 
     </application>
 </manifest>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:scrollbars="vertical" android:scrollbarStyle="insideOverlay" android:orientation="vertical" android:scrollbarAlwaysDrawVerticalTrack="true" android:isScrollContainer="true" android:scrollbarSize="20dip" android:scrollbarTrackVertical="@drawable/icon" android:layout_width="1000dip" android:layout_height="match_parent">
+</LinearLayout>

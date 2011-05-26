@@ -21,4 +21,7 @@
     <string name="Report1">Report1</string>
     <string name="Welcome">Welcome</string>
     <string name="generate">generate</string>
+    <string name="Choose">Choose an Entry</string>
+    <string name="New2">New2</string>
+    <string name="changedate">Change Date</string>
 </resources>

@@ -2,11 +2,9 @@
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:baselineAligned="true" android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">
-    <TextView android:layout_height="wrap_content" android:text="@string/Date" android:id="@+id/textView1" android:layout_width="wrap_content"></TextView>
-    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/blank" android:id="@+id/datebox1" android:inputType="number" android:digits="0123456789"></EditText>
-    <TextView android:layout_height="wrap_content" android:text="@string/Month" android:id="@+id/textView2" android:layout_width="wrap_content"></TextView>
-    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/blank" android:id="@+id/monthbox1" android:inputType="number"></EditText>
-    <TextView android:layout_height="wrap_content" android:text="@string/Year" android:id="@+id/textView3" android:layout_width="wrap_content"></TextView>
-    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/blank" android:id="@+id/yearbox1" android:inputType="number"></EditText>
+    <TextView android:layout_height="wrap_content" android:text="@string/Date" android:layout_width="wrap_content" android:id="@+id/datedisplay"></TextView>
+    <TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="40dip"></TableRow>
+    <Button android:layout_height="wrap_content" android:text="@string/changedate" android:layout_width="match_parent" android:id="@+id/pickdate"></Button>
+    <TableRow android:id="@+id/tableRow2" android:layout_width="match_parent" android:layout_height="40dip"></TableRow>
     <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/Go" android:id="@+id/nextGo"></Button>
 </LinearLayout>

@@ -32,6 +32,5 @@ public class test1 extends Activity {
             };   
        });
        
-        
     }
 }

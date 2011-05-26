@@ -2,14 +2,18 @@
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
-  android:layout_height="match_parent" android:orientation="vertical">
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="TextView" android:id="@+id/expenseTitle"></TextView>
-    <TextView android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content" android:text="@string/Food"></TextView>
-    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/blank" android:inputType="number" android:id="@+id/foodbox1"></EditText>
-    <TextView android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_width="wrap_content" android:text="@string/Transport"></TextView>
-    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/blank" android:inputType="number" android:id="@+id/transportbox1"></EditText>
-    <TextView android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_width="wrap_content" android:text="@string/Laundry"></TextView>
-    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/blank" android:inputType="number" android:id="@+id/laundrybox1"></EditText>
-    <Button android:text="@string/Total" android:id="@+id/totalbutton1" android:layout_width="match_parent" android:layout_height="35dip"></Button>
-    <EditText android:layout_height="wrap_content" android:text="@string/blank" android:id="@+id/totalbox1" android:layout_width="match_parent"></EditText>
+  android:orientation="vertical" android:layout_height="match_parent">
+    <ScrollView android:layout_height="wrap_content" android:id="@+id/scrollView1" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+            <TextView android:text="TextView" android:id="@+id/expenseTitle" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <TextView android:text="@string/Food" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <EditText android:layout_height="wrap_content" android:inputType="number" android:text="@string/blank" android:layout_width="match_parent" android:id="@+id/foodbox1"></EditText>
+            <TextView android:text="@string/Transport" android:id="@+id/textView2" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <EditText android:layout_height="wrap_content" android:inputType="number" android:text="@string/blank" android:layout_width="match_parent" android:id="@+id/transportbox1"></EditText>
+            <TextView android:text="@string/Laundry" android:id="@+id/textView3" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            <EditText android:layout_height="wrap_content" android:inputType="number" android:text="@string/blank" android:layout_width="match_parent" android:id="@+id/laundrybox1"></EditText>
+            <Button android:id="@+id/totalbutton1" android:layout_height="35dip" android:layout_width="match_parent" android:text="@string/Total"></Button>
+            <EditText android:text="@string/blank" android:id="@+id/totalbox1" android:layout_height="wrap_content" android:layout_width="match_parent"></EditText>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

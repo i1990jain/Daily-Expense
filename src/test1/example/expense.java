@@ -16,8 +16,10 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +29,7 @@ public class expense extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.expense);//expense.xml as screen
+	        
 	    final DbAdapter db = new DbAdapter(this);
 	    
 	    Bundle bundle = this.getIntent().getExtras();
@@ -78,13 +81,10 @@ public class expense extends Activity {
             	    
             	    db.open();
             	    long id;
+            	    if(food != 0 )
+            	    
             	    id= db.createExpense(date2, food, transport, laundry, total1);
-            	   db.close();
-            	   
-            	    
-            	    
-            	     
-            	 
+            	   db.close();    	 
                }
            });
 	   }
